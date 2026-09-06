@@ -1,0 +1,38 @@
+{
+  "name": "marketing-data-hub",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:init": "node --env-file=.env.local --import tsx src/lib/db/mongo/bootstrap.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "@google-analytics/admin": "^9.2.0",
+    "@google-analytics/data": "^6.1.0",
+    "@google-cloud/bigquery": "^7.9.4",
+    "@googleapis/searchconsole": "^6.0.1",
+    "@googleapis/sheets": "^11.1.0",
+    "google-ads-api": "^23.0.0",
+    "mongodb": "^6.12.0",
+    "next": "^16.2.12",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "stripe": "^20.3.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "vitest": "^2.1.8"
+  }
+}

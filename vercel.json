@@ -1,0 +1,20 @@
+{
+  "crons": [
+    { "path": "/api/cron/callrail", "schedule": "*/30 * * * *" },
+    { "path": "/api/cron/callrail-deep", "schedule": "0 8 * * *" },
+    { "path": "/api/cron/ga4", "schedule": "0 4 * * *" },
+    { "path": "/api/cron/ga4-properties", "schedule": "0 4 * * *" },
+    { "path": "/api/cron/ga4-clients", "schedule": "*/10 * * * *" },
+    { "path": "/api/cron/gbp", "schedule": "0 5 * * *" },
+    { "path": "/api/cron/gbp-locations", "schedule": "0 4 * * *" },
+    { "path": "/api/cron/lsa", "schedule": "0 6 * * *" },
+    { "path": "/api/cron/lsa-verification", "schedule": "0 6 1 * *" },
+    { "path": "/api/cron/fb-ads", "schedule": "0 * * * *" },
+    { "path": "/api/cron/meta-refresh", "schedule": "0 5 * * *" },
+    { "path": "/api/cron/semrush-projects", "schedule": "0 4 * * *" },
+    { "path": "/api/cron/seo-snapshot", "schedule": "15 4 * * *" },
+    { "path": "/api/cron/seo-rank-capture", "schedule": "0 5 * * *" },
+    { "path": "/api/cron/stripe-sync", "schedule": "0 7 * * *" },
+    { "path": "/api/cron/month-summary", "schedule": "0 2 1 * *" }
+  ]
+}
